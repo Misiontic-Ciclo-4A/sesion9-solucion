@@ -36,12 +36,15 @@ function App() {
       <div className="row row-cols-1 row-cols-md-3 g-4">
         {/* Recorriendo el arreglo de datos */}
         {personajes.map((p) => (
-          <div className="col mt-2" key={p.id}>
-            <div className="card">
+          <div className="col mt-5" key={p.id}>
+            <div
+              className="card align-items-center"
+              style={{ width: "18rem", height: "18rem" }}
+            >
               <img
                 src={`${p.thumbnail.path}.${p.thumbnail.extension}`}
                 className="card-img-top"
-                style={{ width: "50%", height: "50%" }}
+                style={{ width: "80%", height: "80%" }}
               />
               <div className="card-body">
                 <h4 className="card-title">{p.name}</h4>
